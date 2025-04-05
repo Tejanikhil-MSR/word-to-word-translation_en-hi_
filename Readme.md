@@ -16,6 +16,7 @@
 ## 📊 Flow Diagram
 
 ![Language Translation Pipeline](Flow_Diagram.png)
+**_Figure: End-to-end pipeline for both supervised and unsupervised language translation_**
 
 ---
 
@@ -29,7 +30,7 @@ This method requires **parallel corpora** (source ↔ target language word pairs
     - Creation of parallel corups: `(src_language, translated_language)`
     - Refer [`web_scraper_cpu.py`](./DataExtraction/web_scraper_cpu.py) for dataset extraction using beautiful soup and [`aggregator.py`](./GeneratedDatasets/aggregate.py) for Dataset accumulation.
 2. **Vectorization Phase** 
-    - Use an embedding model to convert the words -> vectors (embeddings)
+    - Use an embedding model to convert the `words` -> `vectors` (embeddings)
     - Refer [`train_fasttext.py`](./Training/train_fasttext.py)
 3. **Mapping phase**
     - Learn a **transformation matrix** that maps source embeddings to target embeddings (embeddings of target vocab)
@@ -40,6 +41,8 @@ I used **Procrustes Analysis**, a linear mapping technique to align word embeddi
 > The transformation matrix is learned using **Singular Value Decomposition (SVD)**.
 
 Refer: [`ProcrustesSupervisedAlignment.ipynb`](./Training/ProcrustesSupervisedAlignment.ipynb)
+
+- In the code presented, the GAN has been trained for 500 epochs on approx 10,000 monolingual vocab datasets (english and hindi)
 
 ---
 
@@ -66,6 +69,9 @@ Inspired by **GANs (Generative Adversarial Networks)**, this method works **with
 
 Refer: [`ProcrustesUnSupervisedAlignment.ipynb`](./Training/ProcrustesUnSupervisedAlginment.ipynb)
 
+![Loss curves of the Adversaial Training](Adversarial_Learning_TrainingCurves.png)
+**_Figure: Training curves upon GAN Training_**
+
 ---
 
 ## Challenges Faced : 
@@ -74,7 +80,7 @@ One of the major challenge in building an AI model (language/image) is for Indic
 
 ### Language Complexity
 - Low-resource languages like Hindi lack well-defined tokenizers and linguistic tools
-
+- Refer [`DealWithLanguageComplexity.ipynb`](DealWithLanguageComplexity.ipynb)
 ### Compound Words
 - Many Indic words combine in irregular ways, making them difficult to split or process automatically
 
