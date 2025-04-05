@@ -7,15 +7,14 @@
 
 dl_path='https://dl.fbaipublicfiles.com/arrival'
 
-mkdir crosslingual
+mkdir muse_crosslingual_en_hi
 
 ## Downloading en-{} or {}-en dictionaries
 lg="hi"
-mkdir -p MUSE/
 for suffix in .txt .0-5000.txt .5000-6500.txt
 do
   fname=en-$lg$suffix
-  curl -Lo crosslingual/$fname $dl_path/$fname
+  curl -Lo muse_crosslingual_en_hi/$fname $dl_path/dictionaries/$fname
   fname=$lg-en$suffix
-  curl -Lo crosslingual/$fname $dl_path/$fname
+  curl -Lo muse_crosslingual_en_hi/$fname $dl_path/dictionaries/$fname
 done

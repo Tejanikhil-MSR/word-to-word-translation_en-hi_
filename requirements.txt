@@ -6,3 +6,4 @@ fasttext # for unsupervised embedding training
 pandas # dealing with csv files
 indic-nlp-library # hi and eng library
 scikit-learn # similarity check
+matplotlib # for assessing GAN training
