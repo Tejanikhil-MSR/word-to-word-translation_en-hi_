@@ -27,7 +27,7 @@ This method requires **parallel corpora** (source ↔ target language word pairs
 
 1. **Dataset creation Phase**
     - Creation of parallel corups: `(src_language, translated_language)`
-    - Refer [`web_scraper_cpu.py`](./DataExtraction/web_scraper_cpu.py) for dataset extraction using beautiful soup and [`aggregator.py`] for Dataset accumulation.
+    - Refer [`web_scraper_cpu.py`](./DataExtraction/web_scraper_cpu.py) for dataset extraction using beautiful soup and [`aggregator.py`](./GeneratedDatasets/aggregate.py) for Dataset accumulation.
 2. **Vectorization Phase** 
     - Use an embedding model to convert the words -> vectors (embeddings)
     - Refer [`train_fasttext.py`](./Training/train_fasttext.py)
