@@ -4,3 +4,5 @@ re # for data cleaning
 numba # for faster scraping with cuda
 fasttext # for unsupervised embedding training
 pandas # dealing with csv files
+indic-nlp-library # hi and eng library
+cosine-similarity # similarity check
