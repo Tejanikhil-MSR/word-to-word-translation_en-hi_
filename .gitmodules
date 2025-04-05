@@ -1,3 +1,0 @@
-[submodule "Training/Muse"]
-	path = Training/Muse
-	url = https://github.com/facebookresearch/MUSE.git
