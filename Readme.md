@@ -69,7 +69,7 @@ Inspired by **GANs (Generative Adversarial Networks)**, this method works **with
 
 Refer: [`ProcrustesUnSupervisedAlignment.ipynb`](./Training/ProcrustesUnSupervisedAlginment.ipynb)
 
-![Loss curves of the Adversaial Training](Adversarial_Learning_TrainingCurves.png)
+![Loss curves of the Adversaial Training](Adversarial_Learning_TrainingCurves.png)<br>
 **_Figure: Training curves upon GAN Training_**
 
 ---
