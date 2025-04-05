@@ -45,11 +45,11 @@ Refer: [`ProcrustesSupervisedAlignment.ipynb`](./Training/ProcrustesSupervisedAl
 
 Inspired by **GANs (Generative Adversarial Networks)**, this method works **without parallel corpora**.
 
-### Key Concepts:
+#### Key Concepts:
 - No need for `(src, tar)` word pairs
 - Deals with src and tar language independently 
 
-### Two-Phase Training:
+#### Two-Phase Training:
 
 #### **Phase 1: Adversarial Training**
 - **Generator** learns to transform source embeddings to appear like target embeddings
@@ -68,6 +68,8 @@ Refer: [`ProcrustesUnSupervisedAlignment.ipynb`](./Training/ProcrustesUnSupervis
 
 ## Challenges Faced : 
 
+One of the major challenge in building an AI model (language/image) is for Indic language is its complexity (Compound words, Character Clusters) and lack of proper tokenizers.
+
 ### Language Complexity
 - Low-resource languages like Hindi lack well-defined tokenizers and linguistic tools
 
@@ -77,9 +79,9 @@ Refer: [`ProcrustesUnSupervisedAlignment.ipynb`](./Training/ProcrustesUnSupervis
 ### Lack of GPU-compatible Preprocessing
 - Libraries used for preprocessing (e.g., regular expressions) often **lack GPU support**, slowing down data preparation
 
-### KNN Asymmetry \[1\]
-- KNN search isn't symmetric: `y` might be in KNN of `x`, but `x` isn't necessarily in KNN of `y`
-- **Solution**: Use **CSLS** to balance this discrepancy
+### KNN Asymmetry 
+- KNN search isn't symmetric: `y` might be in KNN of `x`, but `x` isn't necessarily in KNN of `y` \[1\]
+- **Solution**: Use `CSLS` to balance this discrepancy
 
 
 ## 📚 References
