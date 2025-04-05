@@ -37,7 +37,7 @@ I used **Procrustes Analysis**, a linear mapping technique to align word embeddi
 
 > The transformation matrix is learned using **Singular Value Decomposition (SVD)**.
 
-Refer: [`ProcrustesSupervisedAlignment.ipynb`](./ProcrustesSupervisedAlignment.ipynb)
+Refer: [`ProcrustesSupervisedAlignment.ipynb`](./Training/ProcrustesSupervisedAlignment.ipynb)
 
 ---
 
@@ -61,6 +61,8 @@ Inspired by **GANs (Generative Adversarial Networks)**, this method works **with
 - Map these embeddings to actual words using:
   - **K-Nearest Neighbors (KNN)**
   - **Cross-Domain Similarity Local Scaling (CSLS)**
+
+Refer: [`ProcrustesUnSupervisedAlignment.ipynb`](./Training/ProcrustesUnSupervisedAlginment.ipynb)
 
 ---
 
