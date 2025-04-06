@@ -23,8 +23,8 @@
 - Run [`train_fasttext.py`](./Training/train_fasttext.py) file which generates fasttext model files in a folder named `custom_models`
 - Now run the [`ProcrustesSupervisedAlignment.ipynb`](./Training/ProcrustesSupervisedAlignment.ipynb) and [`ProcrustesUnsupervisedAlignment.ipynb`](./Training/ProcrustesUnSupervisedAlginment.ipynb) for supervised and unsupervised embedding alignment process.
 
-#### on colab notebook
-- Follow same instructions as that of windows platform
+#### On colab notebook
+- Follow same instructions as that of windows platform. <br>
 **Note** : Remember to change the paths according to the colab
 
 ## 📊 Flow Diagram
