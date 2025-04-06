@@ -1,4 +1,4 @@
-# Hands-on Language Translation on Low-Resource languages
+# Hands-on word-to-word Translation for Low-Resource languages
 
 ``Note`` : Everything is implemented from scratch
 
@@ -6,12 +6,22 @@
 
 ## 📖 Table of Contents  
 - [Flow Diagram](#-flow-diagram)  
+- [Instructions to run](#-Instructions-to-run)
 - [Traditional Supervised Approach](#-traditional-supervised-approach)  
 - [Unsupervised Approach](#-unsupervised-approach)  
 - [Challenges Faced](#-challenges-faced)
 - [References](#-references)
 
 ---
+
+## Instructions to run
+
+#### On windows/linux platform
+- Create a `venv` or a new conda environment just to avoid conflicts with already existing libraries. (**Optional**)
+- run [`setup.sh`](.setup.sh) file which will install all the required libraries ([`reuirements.txt`](requirements.txt)) and the muse dataset. 
+- The datasets that are extracted using [`web_scraper_cpu.py`](./DataExtraction/web_scraper_cpu.py) are kept in the [`GeneratedDatasets`](./GeneratedDatasets/) and are further converted to a format that is used to train the fasttext and kept in the [`Training`](./Training/) folder. 
+- Run [`train_fasttext.py`](./Training/train_fasttext.py) file which generates fasttext model files in a folder named `custom_models`
+- Now run the ['ProcrustesSupervisedAlignment.ipynb'](./Training/ProcrustesSupervisedAlignment.ipynb) and ['ProcrustesUnsupervisedAlignment.ipynb'](./Training/ProcrustesUnSupervisedAlginment.ipynb) for supervised and unsupervised embedding alignment process. 
 
 ## 📊 Flow Diagram
 
@@ -36,6 +46,7 @@ This method requires **parallel corpora** (source ↔ target language word pairs
     - Learn a **transformation matrix** that maps source embeddings to target embeddings (embeddings of target vocab)
 
 ### 🧠 Core Idea:
+
 I used **Procrustes Analysis**, a linear mapping technique to align word embeddings from the source language space to the target language space.
 
 > The transformation matrix is learned using **Singular Value Decomposition (SVD)**.
@@ -90,7 +101,6 @@ One of the major challenge in building an AI model (language/image) is for Indic
 ### KNN Asymmetry 
 - KNN search isn't symmetric: `y` might be in KNN of `x`, but `x` isn't necessarily in KNN of `y` \[1\]
 - **Solution**: Use `CSLS` to balance this discrepancy
-
 
 ## 📚 References
 
