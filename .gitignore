@@ -1,0 +1,8 @@
+#ignore the model files as they are too large
+/Training/custom_models/*.bin
+
+__pycache__/
+
+.vscode/
+
+Training/unsupervised_mapper.pth

@@ -1,6 +1,9 @@
 beautifulsoup4 # for scraping the wikipedia pages
 langdetect # for detecting the language of text
-re # for data cleaning
+regex # for data cleaning
 numba # for faster scraping with cuda
 fasttext # for unsupervised embedding training
 pandas # dealing with csv files
+indic-nlp-library # hi and eng library
+scikit-learn # similarity check
+matplotlib # for assessing GAN training

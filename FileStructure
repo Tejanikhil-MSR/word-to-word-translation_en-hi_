@@ -1,0 +1,39 @@
+┣ 📂DataExtraction
+┃ ┣ 📜scraper_main.py
+┃ ┗ 📜web_scraper_cpu.py
+┣ 📂Experimentation
+┃ ┗ 📜gpu_based_webscraping.py
+┣ 📂GeneratedDatasets
+┃ ┣ 📂en
+┃ ┃ ┣ 📜Indian_Law_3k.csv
+┃ ┃ ┣ 📜Indian_medicinal_system_3k.csv
+┃ ┃ ┣ 📜Indian_Philosophy_3k.csv
+┃ ┃ ┗ 📜Indian_Recipies_3k.csv
+┃ ┣ 📂hi
+┃ ┃ ┣ 📜Indian_Recipies_3k.csv
+┃ ┃ ┣ 📜IndianMythology_3k.csv
+┃ ┃ ┗ 📜IndianPhilosophy_3k.csv
+┃ ┣ 📂muse_crosslingual_en_hi
+┃ ┃ ┣ 📜en-hi.0-5000.txt
+┃ ┃ ┣ 📜en-hi.5000-6500.txt
+┃ ┃ ┣ 📜en-hi.txt
+┃ ┃ ┣ 📜hi-en.0-5000.txt
+┃ ┃ ┣ 📜hi-en.5000-6500.txt
+┃ ┃ ┗ 📜hi-en.txt
+┃ ┣ 📜aggregate.py
+┃ ┗ 📜extract_muse_dataset.sh
+┣ 📂Training
+┃ ┣ 📂custom_models
+┃ ┃ ┣ 📜model_en.bin
+┃ ┃ ┗ 📜model_hi.bin
+┃ ┣ 📜ProcrustesUnSupervisedAlginment.ipynb
+┃ ┣ 📜ProcrustesSupervisedAlignment.ipynb
+┃ ┣ 📜train_fasttext.py
+┃ ┣ 📜TrainingReadyEnglishText.txt
+┃ ┣ 📜TrainingReadyHindiText.txt
+┃ ┗ 📜unsupervised_mapper.pth
+┣ 📜.gitignore
+┣ 📜DealWithLanguageComplexity.ipynb
+┣ 📜Dockerfile
+┣ 📜requirements.txt
+┗ 📜setup.sh
