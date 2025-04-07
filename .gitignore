@@ -1,5 +1,5 @@
 #ignore the model files as they are too large
-/Training/custom_models/
+/Training/custom_models/*.bin
 
 __pycache__/
 
