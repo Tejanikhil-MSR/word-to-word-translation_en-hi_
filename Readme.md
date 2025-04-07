@@ -29,7 +29,7 @@
 
 ## 📊 Flow Diagram
 
-![Language Translation Pipeline](Flow_Diagram.png)
+![Language Translation Pipeline](./Images/Flow_Diagram.png)
 **_Figure: End-to-end pipeline for both supervised and unsupervised language translation_**
 
 ---
@@ -84,7 +84,7 @@ Inspired by **GANs (Generative Adversarial Networks)**, this method works **with
 
 Refer: [`ProcrustesUnSupervisedAlignment.ipynb`](./Training/ProcrustesUnSupervisedAlginment.ipynb)
 
-![Loss curves of the Adversaial Training](Adversarial_Learning_TrainingCurves.png)<br>
+![Loss curves of the Adversaial Training](./Images/Adversarial_Learning_TrainingCurves.png)<br>
 **_Figure: Training curves upon GAN Training_**
 
 ---
